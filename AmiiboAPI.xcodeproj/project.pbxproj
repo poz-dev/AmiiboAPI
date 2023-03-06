@@ -10,9 +10,9 @@
 		0850355D29B67CEA0048B25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850355C29B67CEA0048B25A /* AppDelegate.swift */; };
 		0850355F29B67CEA0048B25A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850355E29B67CEA0048B25A /* SceneDelegate.swift */; };
 		0850356129B67CEA0048B25A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850356029B67CEA0048B25A /* ViewController.swift */; };
-		0850356429B67CEA0048B25A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0850356229B67CEA0048B25A /* Main.storyboard */; };
 		0850356629B67CED0048B25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0850356529B67CED0048B25A /* Assets.xcassets */; };
 		0850356929B67CED0048B25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0850356729B67CED0048B25A /* LaunchScreen.storyboard */; };
+		0850357129B67DB30048B25A /* AmiiboAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850357029B67DB30048B25A /* AmiiboAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		0850355C29B67CEA0048B25A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0850355E29B67CEA0048B25A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0850356029B67CEA0048B25A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0850356329B67CEA0048B25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0850356529B67CED0048B25A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0850356829B67CED0048B25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0850356A29B67CED0048B25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0850357029B67DB30048B25A /* AmiiboAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiiboAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				0850355C29B67CEA0048B25A /* AppDelegate.swift */,
 				0850355E29B67CEA0048B25A /* SceneDelegate.swift */,
+				0850357029B67DB30048B25A /* AmiiboAPI.swift */,
 				0850356029B67CEA0048B25A /* ViewController.swift */,
-				0850356229B67CEA0048B25A /* Main.storyboard */,
 				0850356529B67CED0048B25A /* Assets.xcassets */,
 				0850356729B67CED0048B25A /* LaunchScreen.storyboard */,
 				0850356A29B67CED0048B25A /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				0850356929B67CED0048B25A /* LaunchScreen.storyboard in Resources */,
 				0850356629B67CED0048B25A /* Assets.xcassets in Resources */,
-				0850356429B67CEA0048B25A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0850356129B67CEA0048B25A /* ViewController.swift in Sources */,
+				0850357129B67DB30048B25A /* AmiiboAPI.swift in Sources */,
 				0850355D29B67CEA0048B25A /* AppDelegate.swift in Sources */,
 				0850355F29B67CEA0048B25A /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0850356229B67CEA0048B25A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0850356329B67CEA0048B25A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0850356729B67CED0048B25A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,9 +282,10 @@
 				DEVELOPMENT_TEAM = S98769RWBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmiiboAPI/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,9 +311,10 @@
 				DEVELOPMENT_TEAM = S98769RWBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AmiiboAPI/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
