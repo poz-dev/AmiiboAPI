@@ -13,7 +13,7 @@ import Foundation
 final class AmiiboAPI {
     
     static let shared = AmiiboAPI()
-    func fetchAmiiboList() {
+    func fetchAmiiboList(onCompletion: @escaping ([Amiibo]) -> ()) {
         let urlString = "https://amiiboapi.com/api/amiibo/"
         let url = URL(string: urlString)!
         
@@ -28,6 +28,7 @@ final class AmiiboAPI {
                 print("Couldnt decode JSON")
                 return
             }
+            onCompletion(amiiboList.amiibo)
             print(amiiboList.amiibo)
             
         }
