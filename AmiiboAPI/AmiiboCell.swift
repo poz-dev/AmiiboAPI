@@ -8,5 +8,6 @@
 import UIKit
 
 class AmiiboCell: UITableViewCell {
+    let imageIV = UIImageView()
     
 }
